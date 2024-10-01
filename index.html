@@ -3,204 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <title>VNHARD - Loja de Hardware</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&display=swap');
     body {
       font-family: 'Archivo', sans-serif;
+      background-color: #1a202c;
+      color: white;
     }
-
-    /* Estilização dos botões com gradiente e hover */
     .btn-gradient {
-      background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
-      border-radius: 8px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      position: relative;
-      overflow: hidden;
+      background: linear-gradient(90deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-
-    .btn-gradient::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 150%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      transform: skewX(-45deg);
-      transition: left 0.3s;
-    }
-
-    .btn-gradient:hover::before {
-      left: 125%;
-    }
-
     .btn-gradient:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0.8;
     }
   </style>
 </head>
-<body class="bg-gray-800 text-white">
+<body>
   <!-- Header -->
   <header class="bg-gray-900 py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl">
-        <span class="font-medium">VN</span><span class="font-extrabold">HARD</span>
-      </h1>
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">VNHARD</h1>
       <nav>
-        <ul class="flex space-x-8">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">Sobre</a></li>
-          <li><a href="#" class="hover:underline">Contato</a></li>
-        </ul>
+        <a href="#" class="text-gray-400 hover:underline mx-2">Home</a>
+        <a href="#" class="text-gray-400 hover:underline mx-2">Sobre</a>
+        <a href="#" class="text-gray-400 hover:underline mx-2">Contato</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="container mx-auto py-8">
-    <h2 class="text-3xl font-bold text-center mb-6">Peças de Computador de Alta Qualidade</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Produtos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <!-- Card 1 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/computer.svg" alt="Processador Intel i9" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Processador Intel i9</h3>
-        <p class="mb-4">Alta performance para jogos e produtividade.</p>
+        <img src="https://storyset.com/illustration/pc-setup.svg" alt="Gabinete Gamer" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Gabinete Gamer</h3>
+        <p class="mb-4">Espaço para todos os seus componentes.</p>
+        <p class="text-lg font-bold mb-4">R$ 499,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 2 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/graphics-card.svg" alt="Placa de Vídeo RTX 3080" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Placa de Vídeo RTX 3080</h3>
-        <p class="mb-4">A placa gráfica para os gamers mais exigentes.</p>
+        <img src="https://storyset.com/illustration/keyboard.svg" alt="Teclado Mecânico" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Teclado Mecânico</h3>
+        <p class="mb-4">Toques suaves e precisão em cada tecla.</p>
+        <p class="text-lg font-bold mb-4">R$ 299,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 3 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/ram.svg" alt="Memória RAM 32GB DDR4" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Memória RAM 32GB DDR4</h3>
-        <p class="mb-4">Velocidade e desempenho máximo para seu PC.</p>
+        <img src="https://storyset.com/illustration/mouse.svg" alt="Mouse Gamer" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Mouse Gamer</h3>
+        <p class="mb-4">Alta precisão para jogos intensos.</p>
+        <p class="text-lg font-bold mb-4">R$ 199,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 4 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/motherboard.svg" alt="Placa Mãe ASUS ROG" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Placa Mãe ASUS ROG</h3>
-        <p class="mb-4">Perfeita para overclock e jogos intensos.</p>
+        <img src="https://storyset.com/illustration/monitor.svg" alt="Monitor 27''" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Monitor 27''</h3>
+        <p class="mb-4">Resolução 4K para imagens incríveis.</p>
+        <p class="text-lg font-bold mb-4">R$ 1.799,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 5 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/ssd.svg" alt="SSD 1TB NVMe" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">SSD 1TB NVMe</h3>
-        <p class="mb-4">Armazenamento rápido e confiável.</p>
+        <img src="https://storyset.com/illustration/graphics-card.svg" alt="Placa de Vídeo 8GB" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Placa de Vídeo 8GB</h3>
+        <p class="mb-4">Desempenho excepcional para jogos.</p>
+        <p class="text-lg font-bold mb-4">R$ 2.299,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 6 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/power-supply.svg" alt="Fonte 750W 80 Plus Gold" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Fonte 750W 80 Plus Gold</h3>
-        <p class="mb-4">Eficiência e estabilidade para seu sistema.</p>
+        <img src="https://storyset.com/illustration/cpu.svg" alt="Processador Intel i7" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Processador Intel i7</h3>
+        <p class="mb-4">Desempenho incrível para multitarefas.</p>
+        <p class="text-lg font-bold mb-4">R$ 1.499,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 7 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/cooler.svg" alt="Cooler Hyper 212" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Cooler Hyper 212</h3>
-        <p class="mb-4">Refrigeração eficiente para o seu processador.</p>
+        <img src="https://storyset.com/illustration/ram.svg" alt="Memória RAM 16GB" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Memória RAM 16GB</h3>
+        <p class="mb-4">Mais rapidez e eficiência.</p>
+        <p class="text-lg font-bold mb-4">R$ 499,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 8 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/computer-case.svg" alt="Gabinete ATX RGB" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Gabinete ATX RGB</h3>
-        <p class="mb-4">Design estiloso e espaço para ventilação.</p>
+        <img src="https://storyset.com/illustration/hard-drive.svg" alt="HD 1TB" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">HD 1TB</h3>
+        <p class="mb-4">Espaço de armazenamento confiável.</p>
+        <p class="text-lg font-bold mb-4">R$ 399,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 9 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/mechanical-keyboard.svg" alt="Teclado Mecânico RGB" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Teclado Mecânico RGB</h3>
-        <p class="mb-4">Toques rápidos e resposta precisa.</p>
+        <img src="https://storyset.com/illustration/gaming-chair.svg" alt="Cadeira Gamer" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Cadeira Gamer</h3>
+        <p class="mb-4">Conforto para longas sessões de jogo.</p>
+        <p class="text-lg font-bold mb-4">R$ 899,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 10 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/gaming-mouse.svg" alt="Mouse Gamer Logitech" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Mouse Gamer Logitech</h3>
-        <p class="mb-4">Precisão e conforto em um só produto.</p>
+        <img src="https://storyset.com/illustration/headphones.svg" alt="Fones de Ouvido Gamer" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Fones de Ouvido Gamer</h3>
+        <p class="mb-4">Som imersivo para jogos.</p>
+        <p class="text-lg font-bold mb-4">R$ 299,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 11 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/monitor.svg" alt="Monitor 27" 144Hz" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Monitor 27" 144Hz</h3>
-        <p class="mb-4">Imagens suaves para jogos intensos.</p>
+        <img src="https://storyset.com/illustration/cooling.svg" alt="Cooler para PC" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Cooler para PC</h3>
+        <p class="mb-4">Mantém seu PC sempre refrigerado.</p>
+        <p class="text-lg font-bold mb-4">R$ 199,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
       <!-- Card 12 -->
       <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/speakers.svg" alt="Caixas de Som Gaming" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Caixas de Som Gaming</h3>
-        <p class="mb-4">Som imersivo para uma experiência única.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 13 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/network.svg" alt="Adaptador Wi-Fi USB" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Adaptador Wi-Fi USB</h3>
-        <p class="mb-4">Conexão sem fio estável e rápida.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 14 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/external-hard-drive.svg" alt="HD Externo 2TB" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">HD Externo 2TB</h3>
-        <p class="mb-4">Armazenamento extra para todos os seus arquivos.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 15 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/webcam.svg" alt="Webcam Full HD" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Webcam Full HD</h3>
-        <p class="mb-4">Vídeos claros e nítidos em qualquer situação.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 16 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/surge-protector.svg" alt="Estabilizador de Energia" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Estabilizador de Energia</h3>
-        <p class="mb-4">Proteção para seus dispositivos eletrônicos.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 17 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/hdmi-cable.svg" alt="Cabos HDMI 4K" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Cabos HDMI 4K</h3>
-        <p class="mb-4">Para transmitir vídeo em alta definição.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 18 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/bluetooth-headphones.svg" alt="Fones de Ouvido Bluetooth" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Fones de Ouvido Bluetooth</h3>
-        <p class="mb-4">Liberdade sem fio e som de qualidade.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 19 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/router.svg" alt="Roteador 802.11ac" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Roteador 802.11ac</h3>
-        <p class="mb-4">Conexão rápida e ampla cobertura.</p>
-        <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
-      </div>
-      <!-- Card 20 -->
-      <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-        <img src="https://storyset.com/illustration/monitor-stand.svg" alt="Suporte para Monitor Duplo" class="w-full h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-4">Suporte para Monitor Duplo</h3>
-        <p class="mb-4">Ajuste e organização para sua estação de trabalho.</p>
+        <img src="https://storyset.com/illustration/power-supply.svg" alt="Fonte 600W" class="w-full h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-4">Fonte 600W</h3>
+        <p class="mb-4">Energia confiável para seu sistema.</p>
+        <p class="text-lg font-bold mb-4">R$ 299,00</p>
         <button class="btn-gradient" onclick="redirectTo404()">Comprar</button>
       </div>
     </div>
@@ -209,15 +144,13 @@
   <!-- Footer -->
   <footer class="bg-gray-900 py-4">
     <div class="container mx-auto text-center">
-      <p>&copy; 2024 VNHARD. Todos os direitos reservados.</p>
-      <p><a href="#" class="hover:underline">Termos de Privacidade</a> | <a href="#" class="hover:underline">Contato</a></p>
-      <p><a href="index.html" class="hover:underline">Home</a> | <a href="#" class="hover:underline">Sobre</a> | <a href="#" class="hover:underline">Direitos</a></p>
+      <p class="text-gray-400">Termos de Privacidade | Contato | Home | Sobre | Direitos</p>
     </div>
   </footer>
 
   <script>
     function redirectTo404() {
-      window.location.href = "404.html"; // Redireciona para a página de erro 404
+      window.location.href = "404.html"; // redirecionar para a página de erro 404
     }
   </script>
 </body>
