@@ -118,5 +118,5 @@ Após a criação e inserção de cada item nas branches, dei os comandos `git a
 
 ## Para acessar o site, que foi hospedado aqui no próprio GitHub, é só clicar no link abaixo: 
 ### Site legal 
-https://vnlopes.github.io/AVALIA-O/](https://vnlopes.github.io/AVALIA-O/
+https://vnlopes.github.io/AVALIA-O/
 
