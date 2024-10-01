@@ -107,20 +107,16 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 ---
 
-Espero que esse README atenda às suas expectativas. Ele oferece uma estrutura clara, com animações dinâmicas (GitHub Stats), explicações detalhadas sobre a organização do repositório e instruções de acesso ao site.
+# Como criei o repositório?
 
+Primeiro criei o repositório no GitHub e adicionei o `README.md`.  
+Peguei o link do repositório e, na minha área de trabalho, dei `git clone` para cloná-lo.  
+Dei o comando `git checkout -b front-end` para criar a branch Front-End com seus arquivos. Fiz o mesmo com o Admin.  
+Após a criação e inserção de cada item nas branches, dei os comandos `git add .` para adicionar os arquivos; `git commit -m "uma mensagem"` e `git push -u origin "sua respectiva branch"`.
 
+# Para acessar o site!
 
-#Como criei o repositório?
-
-1. Primeiro criei o repositório no github e adicionei o readme.md
-2. Peguei o link do repositório e na minha área de trabalho dei git clone para clona-lo
-3. Dei o comando de "git checkout -b front-end" para criar a branch Front-End com seus arquivos. Fiz o mesmo com o Admin.
-4. Após a criação e inserção de cada item nas branchs, dei os comandos "git add . para adicionar os arquivos; git commit -m "uma mensagem" e git push -u origin "sua respectiva branch""
-
-#Para acessar o site!
-
-##Para acessar o site, que foi hospedado aqui no próprio GitHub, é só clicar no link abaixo:
-###Site legal
+## Para acessar o site, que foi hospedado aqui no próprio GitHub, é só clicar no link abaixo: 
+### Site legal 
 **[Acesse o Site da VNHARD]([https://seu-usuario.github.io/vnhard-site/](https://vnlopes.github.io/AVALIA-O/))**
 
