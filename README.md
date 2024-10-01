@@ -1,7 +1,3 @@
-Aqui está um exemplo de um **README.md** dinâmico e explicativo para o repositório que será usado no GitHub. Ele contém informações detalhadas sobre os ramos, estrutura do site e instruções de acesso. Além disso, inclui códigos para adicionar animações e estatísticas dinâmicas, como você solicitou.
-
----
-
 # VNHARD - Loja de Hardware 💻⚙️
 
 [![GitHub release](https://img.shields.io/github/v/release/seu-usuario/vnhard-site?style=for-the-badge)](https://github.com/seu-usuario/vnhard-site/releases)
@@ -36,8 +32,8 @@ Este repositório contém o código front-end da loja de hardware **VNHARD**, es
 │   ├── 404.html
 │   ├── /css
 │   └── /js
-├── 📂 Admin (Sem arquivos no momento)
-└── README.md
+├── 📂 Admin (Administrador)
+└── admin.php
 ```
 
 ### Explicação dos Ramos:
@@ -112,3 +108,17 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 ---
 
 Espero que esse README atenda às suas expectativas. Ele oferece uma estrutura clara, com animações dinâmicas (GitHub Stats), explicações detalhadas sobre a organização do repositório e instruções de acesso ao site.
+
+
+
+#Como criei o repositório?
+
+1. Primeiro criei o repositório no github e adicionei o readme.md
+2. Peguei o link do repositório e na minha área de trabalho dei git clone para clona-lo
+3. Dei o comando de "git checkout -b front-end" para criar a branch Front-End com seus arquivos. Fiz o mesmo com o Admin.
+4. Após a criação e inserção de cada item nas branchs, dei os comandos "git add . para adicionar os arquivos; git commit -m "uma mensagem" e git push -u origin "sua respectiva branch""
+
+#Para acessar o site!
+
+##Para acessar o site, que foi hospedado aqui no próprio GitHub, é só clicar no link abaixo:
+### Site legal: 
