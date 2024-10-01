@@ -48,7 +48,7 @@ Este repositório contém o código front-end da loja de hardware **VNHARD**, es
 
 O site está hospedado diretamente no GitHub Pages. Para acessá-lo, siga o link abaixo:
 
-🔗 **[Acesse o Site da VNHARD](https://seu-usuario.github.io/vnhard-site/)**
+🔗 **[Acesse o Site da VNHARD]([https://seu-usuario.github.io/vnhard-site/](https://vnlopes.github.io/AVALIA-O/))**
 
 Para clonar o repositório e testar localmente, use o seguinte comando:
 
@@ -121,4 +121,6 @@ Espero que esse README atenda às suas expectativas. Ele oferece uma estrutura c
 #Para acessar o site!
 
 ##Para acessar o site, que foi hospedado aqui no próprio GitHub, é só clicar no link abaixo:
-### Site legal: 
+###Site legal
+**[Acesse o Site da VNHARD]([https://seu-usuario.github.io/vnhard-site/](https://vnlopes.github.io/AVALIA-O/))**
+
